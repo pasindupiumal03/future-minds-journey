@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Future Minds Journey - Educational Resource Website",
   "scripts": {
-    "start": "serve -s",
-    "build": "echo 'Building static site'"
+    "start": "serve -s .",
+    "dev": "serve -s .",
+    "build": "echo 'Building static site' && exit 0",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "serve": "^14.2.0"
