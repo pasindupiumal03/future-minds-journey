@@ -1,0 +1,14 @@
+{
+  "name": "future-minds-journey",
+  "version": "1.0.0",
+  "description": "Future Minds Journey - Educational Resource Website",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "keywords": ["education", "resources", "early childhood"],
+  "author": "",
+  "license": "ISC"
+}
