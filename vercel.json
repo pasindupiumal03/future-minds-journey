@@ -2,23 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
+      "src": "**/*.html",
       "use": "@vercel/static"
     },
     {
-      "src": "css/*.css",
+      "src": "**/*.css",
       "use": "@vercel/static"
     },
     {
-      "src": "js/*.js",
+      "src": "**/*.js",
       "use": "@vercel/static"
     },
     {
-      "src": "images/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.{jpg,png,svg,ico}",
+      "src": "**/*.{jpg,jpeg,png,svg,ico,webp,gif}",
       "use": "@vercel/static"
     }
   ],
@@ -26,6 +22,10 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
+    },
+    {
+      "src": "/(.*).(css|js|jpg|jpeg|png|svg|ico|webp|gif)",
+      "dest": "/$1.$2"
     }
   ]
 }

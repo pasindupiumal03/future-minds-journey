@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Future Minds Journey - Educational Resource Website",
   "scripts": {
-    "start": "serve"
+    "start": "serve -s",
+    "build": "echo 'Building static site'"
   },
   "dependencies": {
     "serve": "^14.2.0"
+  },
+  "devDependencies": {
+    "vercel": "^28.16.11"
   },
   "keywords": ["education", "resources", "early childhood"],
   "author": "",
